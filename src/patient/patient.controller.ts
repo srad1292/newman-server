@@ -18,6 +18,8 @@ class PatientController {
         this.router.put("/:patientId", this.updatePatient);
         this.router.get("/", this.getAllPatients);
         this.router.get("/:patientId", this.getPatient);
+
+        console.log(this.router);
         
     }
 
