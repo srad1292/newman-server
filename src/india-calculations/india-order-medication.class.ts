@@ -39,7 +39,7 @@ export class IndiaOrderMedication implements IndiaMedication {
     }
 
     private _subtractPercentageDiscount(): void {
-        const discountAmount = this._calculatePercentageOfValue(this.discount, this.priceBeforeDiscount);
+        const discountAmount: number = this._calculatePercentageOfValue(this.discount, this.priceBeforeDiscount);
         this.priceAfterDiscount = this.priceBeforeDiscount - discountAmount;
     }
 
