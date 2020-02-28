@@ -1,5 +1,5 @@
 export interface IndiaMedication {
-    quantitiy: number;
+    quantity: number;
     maximumRetailPrice: number;
     priceBeforeDiscount: number;
     discountIsPercentage: boolean;
@@ -11,7 +11,7 @@ export interface IndiaMedication {
 
 
 export const defaultIndiaMedication: IndiaMedication  = {
-    quantitiy: 1,
+    quantity: 1,
     maximumRetailPrice: 0,
     priceBeforeDiscount: null,
     discountIsPercentage: true,

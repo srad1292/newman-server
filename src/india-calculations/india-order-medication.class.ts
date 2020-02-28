@@ -2,7 +2,7 @@ import { IndiaMedication, defaultIndiaMedication } from "./india-medication.inte
 
 export class IndiaOrderMedication implements IndiaMedication {
 
-    quantitiy: number;
+    quantity: number;
     maximumRetailPrice: number;
     priceBeforeDiscount: number;
     discountIsPercentage: boolean;
@@ -12,7 +12,7 @@ export class IndiaOrderMedication implements IndiaMedication {
     netPrice: number;
 
     constructor(medication: IndiaMedication = defaultIndiaMedication) {
-        this.quantitiy = medication.quantitiy;
+        this.quantity = medication.quantity;
         this.maximumRetailPrice = medication.maximumRetailPrice;
         this.priceBeforeDiscount = medication.priceBeforeDiscount;
         this.discountIsPercentage =  medication.discountIsPercentage;
@@ -23,7 +23,7 @@ export class IndiaOrderMedication implements IndiaMedication {
     }
 
     calculatePriceBeforeDiscount(): void {
-        this.priceBeforeDiscount = this.quantitiy * this.maximumRetailPrice;
+        this.priceBeforeDiscount = this.quantity * this.maximumRetailPrice;
     }
 
     calculatePriceAfterDiscount(): void {
